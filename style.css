@@ -1,0 +1,213 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Heebo&family=Indie+Flower&family=Poppins:wght@400;700&display=swap');
+
+body{
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}
+.h3-div{
+    margin-top: 87px;
+    left: 8.33%;
+    right: 74.79%;
+    top: 2.63%;
+    bottom: 95.79%;
+    margin-bottom: 146px;
+}
+
+h3{
+    /* box-sizing: border-box; */
+    position: relative;
+    font-weight:700;
+    color: #fff;
+    -webkit-text-stroke: .3vw rgb(255, 255, 255);
+}
+h3::before{
+    content: attr(data-text);
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    color: #E02C6D;
+    -webkit-text-stroke: 0vw rgb(250, 250, 250);
+    border-right: 0px solid #E02C6D ;
+    overflow: hidden;
+    animation: animate 5s linear infinite;
+}
+h1{
+    position: relative;
+    font-weight:700;
+    font-size:52px;
+    line-height:70px;
+    color: #000000;
+}
+@keyframes animate {
+    0%,100%{
+        width: 0%;
+        /* height: 100%; */
+        
+    }
+    50%,90%{
+        width: 100%;
+        /* height: 0%; */
+    }
+    
+}
+.header-class{
+    max-width: fit-content;
+    margin-left: 120px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.main-heading{
+    padding-top: 105px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+}
+.start-class{
+    width: 582px;
+    height: 133px;
+    left: 120px;
+    top: 285px;
+    right: 738px;
+
+}
+button{
+    width:196px;
+    height:44px;
+    top:511px;
+    left:120px;
+    border: 2px solid rgb(226, 81, 154);
+    border-radius: 5px;
+    padding:10px, 24px, 10px, 24px;
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+}
+span{
+    padding-left: 20px;
+}
+#h1-image{
+    /* position: absolute; */
+    width: 440px;
+    height: 414px;
+    padding-left: 133px;
+    padding-top: 200px;
+    left: 835px;
+    top: 211px;
+}
+.products-section{
+    display: grid;
+    grid-template-columns: column;
+    justify-content: center;
+    position: absolute;
+    margin-top: 400px;
+    width: 1047px;
+    height: 1662px;
+    left: 196px;
+
+}
+.products-section .products-section-h2{
+    text-align: center;
+}
+.products-section-h2{
+    /* margin-bottom: 30px; */
+    margin-top: 100px;
+    padding-bottom: 120px;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    margin-top: -80px;
+}
+.product{
+    box-shadow: 5px 10px 40px lightgrey;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 0px 20px;
+
+}
+.products .product img{
+    padding-top: 20px;
+}
+.rating{
+    color: goldenrod;
+    fill: gold;
+}
+.rating span{
+    color: black;
+    font-weight: bold;
+}
+p{
+    color: black;
+}
+
+a{
+    text-align: end;
+    padding: 20px;
+    color: #E02C6D;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;    ;
+}
+.optional-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:auto;
+    height:270px;
+    margin-left: 165px;
+    margin-right: 165px;
+    margin-top: 2300px;
+    margin-bottom: -2800px;
+}
+.optional-section h2{
+    color: black;
+}
+.optional-section img{
+    padding-right: 30px;
+    width: 404px;
+    height: 270px;
+}
+.footer-class{
+    margin-top: 3000px;
+    background-color:  #0A0826;
+    margin-bottom: 0;
+    position: relative;
+    color: white;
+    width: auto;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-class p{
+    color: white;
+}
+.footer-class .footer-icons{
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+}
+#fb-icon{
+    padding-right: 10px;
+}
+#twitter-icon{
+    padding-right: 10px;
+}
+#youtube-icon{
+    padding-right:10px;
+}
+#linkedin-icon{
+    padding-right: 10px;
+}
